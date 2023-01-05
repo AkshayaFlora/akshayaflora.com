@@ -1,0 +1,184 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/108699adf8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav> 
+                <img src="images/NAME.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#portfolio">My Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+            </nav>
+           
+                <div class="header-text">
+           
+            
+                <h1>Hey there!</h1>
+<br>
+                <p>I'm <span>Akshaya</span> from India</p>  
+            </div>
+        
+    </div>
+    </div>
+<!---------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image2.jpeg">
+                </div> 
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">I am Akshaya, a fresher with a little knowledge of Web development, trying to create websites with the knowledge I have and improving my skills day by day through Internet.<br>The skills I have towards web development is self-taught.<br>I'm very much interested in Singing and Playing music instruments. I'm an avid traveller, foodie,and Occasional Badminton player.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Work Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>C, C++, and Full Java</li>
+                                <br><li><span>Web technologies</span><br>HTML (Hypertext markup language), CSS (Cascading style sheets), JavaScript, and jQuery</li>
+                                <br><li><span>Tools and IDE</span><br>NetBeans, MS Office, and Eclipse</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2018 - 2022   Bachelor of Technology: Computer Science and Engineering</span><br>St.Mary’s Engineering College – Hyderabad</li>
+                                <br><li><span>2016 - 2018   Intermediate</span><br>Narayana Junior College – Hyderabad</li>
+                                <br><li><span>2015 - 2016   SSC</span><br>Amaravathi Talent School - Hyderabad</li>
+                            </ul>
+                        </div><div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>November 2022 - present  &nbsp; Bharat Electronics Limited, Hyderabad, Telangana.</span><br>Apprentice in Development and Engineering Department, Army Division.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------projects------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>My First Project</h2>
+                    <p> A Webpage related to Light camp to collect all the lights. In this I have created a light which has on and off button</p>
+                    <a href="https://akshayaflora.github.io/VueLamp.com/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Division and Replication of Cloud for optimal Performance and Security</h2>
+                    <p>The DROPS methodology, a cloud storage security scheme that collectively deals with the security and performance in terms of retrieval time</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Suspicious Human activity Detection</h2>
+                    <p>Suspicious Human activity Detection from Video Surveillance is an active research area of image-processing and computer vision which involves recognition of Human activity and categorize them into normal and abnormal activities.</p>
+                    <a href="#">Learn more</a>
+                </div><br>
+            </div>
+        </div>
+    </div>
+    <!-- -----------portfolio------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="resume">
+                <a href="https://app.luminpdf.com/viewer/63b6c2e2a4a678612bf89d7c" download>Download CV</a>
+            </div>
+        </div>
+    </div>
+    <!-- --------------contact------------->
+    <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>akshayaflora2001@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9618655038</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/akshaya.flora/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/akshaya_flora"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/akshayaflora__/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/akshaya-e-793500243/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+             <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+             </form>
+             <span id="msg"></span>
+            </div>
+           </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Akshaya. Made with <i class="fa-solid fa-heart"></i> by Akshaya Flora</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyjRmfoWtBFyd2fMNOGWDR9GRWP7UDRLiabl_P5bxP9deJWCwdTicZcgu3tw7DB7I5L/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
